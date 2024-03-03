@@ -7,6 +7,7 @@ GET {{baseUrl}}/api/v1/todos
 GET {{baseUrl}}/api/v1/todos/1
 ### Create a Todo
 POST {{baseUrl}}/api/v1/todos
+
 Content-Type: application/json
 {
     "title": "An example Todo",
@@ -14,9 +15,13 @@ Content-Type: application/json
 }
 ### Update a Todo
 PUT {{baseUrl}}/api/v1/todos/1
+
 Content-Type: application/json
 {
     "title": "updated title",
 }
+
 ### Delete a Todo
 DELETE {{baseUrl}}/api/v1/todos/1
+
+GET /api/v1/todos?completed=true&window=7 HTTP/1.1
